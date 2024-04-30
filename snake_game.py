@@ -11,7 +11,7 @@ green = pygame.Color(0, 255, 0)
 
 # Initialising Pygame
 pygame.init()
-pygame.display.set_caption('GeeksforGeeks Snakes')
+pygame.display.set_caption('GunjanJaswal Snakes')
 game_window = pygame.display.set_mode((window_x, window_y))
 fps = pygame.time.Clock()
 
@@ -25,6 +25,10 @@ change_to = direction
 
 # Game Function
 def game():
+    global direction
+    global change_to
+    global fruit_position
+    global fruit_spawn
     # Main game loop
     while True:
         # Event handling
